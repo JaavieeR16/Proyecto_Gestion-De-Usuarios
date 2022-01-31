@@ -1,0 +1,167 @@
+/*//////////////////Estilo general///////////////////////*/
+
+html,body{
+    background:rgb(80,80,80);
+    color:white;
+    width:100%;
+    height:100%;
+    padding:0px;
+    margin:0px;
+}
+main{height:100%;}
+
+header{height:400px;}
+
+/*//////////////////Estilo general///////////////////////*/
+
+/*//////////////////Estilo del pasafotos///////////////////////*/
+
+section article{
+    width:100px;
+    height:100px;
+    float:left;
+    border:0px solid white;
+    position:relative;
+    margin:5px;
+    transform:scale(1,1);
+    z-index:1;
+    transition:all 1s; 
+}
+section article img{
+    width:100%;
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+section article h3, section article h4, section article p{
+    position:absolute;
+
+}
+.aumentado{
+    transform:scale(1.3,1.3);
+    border:0px solid white;
+    box-shadow:0px 0px 20px 0px black;
+    z-index:1000;
+}
+section{
+    padding-top:50px;
+    width:100%;
+    height:300px;
+    overflow:hidden;
+}
+section .ribbon{
+    width:4000px;
+    position:relative;
+    left:0px;
+    transition:all 1s;
+}
+.botonredondo{
+    width:30px;
+    height:30px;
+    border-radius:30px;
+    background:rgb(220,220,220);
+    color:rgb(50,50,50);
+    font-size:30px;
+    text-align:center;
+    line-height:30px; 
+    font-weight:bold;
+    position:absolute;
+}
+.botones{
+    width:100%;
+    position:absolute;
+    z-index:1000;
+}
+.anterior{
+    top:47px;
+    transform:rotate(180deg);
+}
+.posterior{
+    right:20px;
+    top:47px;
+}
+
+/*//////////////////Estilo del pasafotos///////////////////////*/
+
+/*//////////////////Estilo del destacado///////////////////////*/
+
+#destacado{
+    position:absolute;
+    width:80%;
+    right:0px;
+    height:100%;
+    top:0px;
+    height:400px;
+    overflow:hidden;
+    box-shadow:0px 0px 20px 20px black inset;
+}
+
+#destacado img{
+    width:100%;
+    opacity:0.5;
+}
+
+#destacado h2, #destacado h3, #destacado p{
+    position:absolute;
+    top:0px;
+}
+
+/*//////////////////Estilo del destacado///////////////////////*/
+
+/*//////////////////Estilo de los detalles///////////////////////*/
+
+.detalles{
+    width:100%;
+    height:0px;
+    background:rgb(40,40,40);
+    box-shadow:0px 0px 30px 0px black inset;
+    overflow:hidden;
+    transition:all 1s;
+    position:relative;
+}
+
+.abierto{
+    height:400px;
+}
+
+.muyabierto{
+    height:800px;
+}
+
+.detalles h2, .detalles h3, .detalles p, .detalles button{
+    position:absolute;
+}
+
+.detalles h2{
+    top:20px;
+    left:20px;
+}
+
+.detalles h3{
+    top:50px;
+    left:20px;
+}
+
+.detalles p{
+    top:80px;
+    left:20px;
+}
+
+.detalles img{
+    width:100%;
+    opacity:0.5;
+}
+
+.detalles button{
+    bottom:20px;
+    left:20px;
+    background:#10ef83;
+    border-radius:11px;
+    padding:20px 45px;
+    color:#ffffff;
+    display:inline-block;
+    font:normal bold 25px/1 "Calibri", sans-serif;
+    text-align:center;
+    border:0px;
+}
+/*//////////////////Estilo de los detalles///////////////////////*/
